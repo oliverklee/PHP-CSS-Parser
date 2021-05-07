@@ -60,15 +60,15 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     // is your PHP version different from the one your refactor to?
     // [default: your PHP version], uses PHP_VERSION_ID format
-    $parameters->set(Option::PHP_VERSION_FEATURES, PhpVersion::PHP_53);
+    $parameters->set(Option::PHP_VERSION_FEATURES, PhpVersion::PHP_56);
 
     // Define what rule sets will be applied
     $parameters->set(Option::SETS, [
         SetList::PHP_52,
         SetList::PHP_53,
-        // SetList::PHP_54,
-        // SetList::PHP_55,
-        // SetList::PHP_56,
+        SetList::PHP_54,
+        SetList::PHP_55,
+        SetList::PHP_56,
         // SetList::PHP_70,
         // SetList::PSR_4,
         // SetList::TYPE_DECLARATION,
