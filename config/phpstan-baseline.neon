@@ -1,9 +1,109 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeOpeningBrace\\(\\)\\.$#"
+			count: 1
+			path: ../src/CSSList/AtRuleBlockList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:safely\\(\\)\\.$#"
+			count: 1
+			path: ../src/CSSList/CSSList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceAfterBlocks\\(\\)\\.$#"
+			count: 1
+			path: ../src/CSSList/CSSList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeBlocks\\(\\)\\.$#"
+			count: 1
+			path: ../src/CSSList/CSSList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBetweenBlocks\\(\\)\\.$#"
+			count: 1
+			path: ../src/CSSList/CSSList.php
+
+		-
+			message: "#^Cannot call method getString\\(\\) on string\\.$#"
+			count: 1
+			path: ../src/CSSList/CSSList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeOpeningBrace\\(\\)\\.$#"
+			count: 1
+			path: ../src/CSSList/KeyFrame.php
+
+		-
 			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setIndentation\\(\\)\\.$#"
 			count: 2
 			path: ../src/OutputFormat.php
+
+		-
+			message: "#^Cannot call method setSpaceAfterRuleName\\(\\) on Sabberworm\\\\CSS\\\\OutputFormat\\|false\\.$#"
+			count: 1
+			path: ../src/OutputFormat.php
+
+		-
+			message: "#^Cannot call method setSpaceBetweenBlocks\\(\\) on Sabberworm\\\\CSS\\\\OutputFormat\\|false\\.$#"
+			count: 1
+			path: ../src/OutputFormat.php
+
+		-
+			message: "#^Default value of the parameter \\#2 \\$bIncludeEnd \\(false\\) of method Sabberworm\\\\CSS\\\\Parsing\\\\ParserState\\:\\:consumeUntil\\(\\) is incompatible with type string\\.$#"
+			count: 1
+			path: ../src/Parsing/ParserState.php
+
+		-
+			message: "#^Default value of the parameter \\#3 \\$consumeEnd \\(false\\) of method Sabberworm\\\\CSS\\\\Parsing\\\\ParserState\\:\\:consumeUntil\\(\\) is incompatible with type string\\.$#"
+			count: 1
+			path: ../src/Parsing/ParserState.php
+
+		-
+			message: "#^Cannot call method render\\(\\) on string\\.$#"
+			count: 1
+			path: ../src/Property/CSSNamespace.php
+
+		-
+			message: "#^Cannot call method render\\(\\) on string\\.$#"
+			count: 1
+			path: ../src/Property/Charset.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceAfterRuleName\\(\\)\\.$#"
+			count: 1
+			path: ../src/Rule/Rule.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(array\\<array\\-key, array\\<array\\-key, RuleValueList\\>\\>\\)\\: Unexpected token \"\\\\n     \\*\", expected variable at offset 67$#"
+			count: 1
+			path: ../src/Rule/Rule.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeOpeningBrace\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/AtRuleSet.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:implode\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/DeclarationBlock.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceAfterSelectorSeparator\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/DeclarationBlock.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeOpeningBrace\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/DeclarationBlock.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeSelectorSeparator\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/DeclarationBlock.php
 
 		-
 			message: "#^Class Sabberworm\\\\CSS\\\\Value\\\\Size constructor invoked with 5 parameters, 1\\-4 required\\.$#"
@@ -16,7 +116,137 @@ parameters:
 			path: ../src/RuleSet/DeclarationBlock.php
 
 		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:removeLastSemicolon\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/RuleSet.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:safely\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/RuleSet.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceAfterRules\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/RuleSet.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeRules\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/RuleSet.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBetweenRules\\(\\)\\.$#"
+			count: 1
+			path: ../src/RuleSet/RuleSet.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:getStringQuotingType\\(\\)\\.$#"
+			count: 2
+			path: ../src/Value/CSSString.php
+
+		-
 			message: "#^Variable \\$oVal might not be defined\\.$#"
 			count: 1
 			path: ../src/Value/CalcFunction.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:implode\\(\\)\\.$#"
+			count: 1
+			path: ../src/Value/CalcRuleValueList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:getRGBHashNotation\\(\\)\\.$#"
+			count: 1
+			path: ../src/Value/Color.php
+
+		-
+			message: "#^PHPDoc tag @param for parameter \\$aComponents with type array\\<int, Sabberworm\\\\CSS\\\\Value\\\\CSSFunction\\|Sabberworm\\\\CSS\\\\Value\\\\CSSString\\|Sabberworm\\\\CSS\\\\Value\\\\LineName\\|Sabberworm\\\\CSS\\\\Value\\\\RuleValueList\\|Sabberworm\\\\CSS\\\\Value\\\\Size\\|Sabberworm\\\\CSS\\\\Value\\\\URL\\|string\\>\\|Sabberworm\\\\CSS\\\\Value\\\\CSSFunction\\|Sabberworm\\\\CSS\\\\Value\\\\CSSString\\|Sabberworm\\\\CSS\\\\Value\\\\LineName\\|Sabberworm\\\\CSS\\\\Value\\\\RuleValueList\\|Sabberworm\\\\CSS\\\\Value\\\\Size\\|Sabberworm\\\\CSS\\\\Value\\\\URL\\|string is not subtype of native type array\\.$#"
+			count: 1
+			path: ../src/Value/LineName.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:implode\\(\\)\\.$#"
+			count: 1
+			path: ../src/Value/ValueList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceAfterListArgumentSeparator\\(\\)\\.$#"
+			count: 1
+			path: ../src/Value/ValueList.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:spaceBeforeListArgumentSeparator\\(\\)\\.$#"
+			count: 1
+			path: ../src/Value/ValueList.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(array\\<int, DeclarationBlock\\>\\)\\: Unexpected token \"\\\\n     \\*\", expected variable at offset 66$#"
+			count: 1
+			path: ../tests/CSSList/DocumentTest.php
+
+		-
+			message: "#^PHPDoc tag @param has invalid value \\(array\\<string, array\\<int, array\\<int, DeclarationBlock\\>\\>\\>\\)\\: Unexpected token \"\\\\n     \", expected variable at offset 73$#"
+			count: 1
+			path: ../tests/CSSList/DocumentTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setIgnoreExceptions\\(\\)\\.$#"
+			count: 3
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setRGBHashNotation\\(\\)\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setSpaceAfterListArgumentSeparator\\(\\)\\.$#"
+			count: 2
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setSpaceAfterRuleName\\(\\)\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setSpaceAfterSelectorSeparator\\(\\)\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setSpaceBeforeOpeningBrace\\(\\)\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setSpaceBetweenBlocks\\(\\)\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\OutputFormat\\:\\:setStringQuotingType\\(\\)\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Cannot call method setIndentation\\(\\) on Sabberworm\\\\CSS\\\\OutputFormat\\|false\\.$#"
+			count: 1
+			path: ../tests/OutputFormatTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\RuleSet\\\\RuleSet\\:\\:getSelectors\\(\\)\\.$#"
+			count: 1
+			path: ../tests/ParserTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\Value\\\\RuleValueList\\:\\:getColor\\(\\)\\.$#"
+			count: 7
+			path: ../tests/ParserTest.php
+
+		-
+			message: "#^Call to an undefined method Sabberworm\\\\CSS\\\\Value\\\\RuleValueList\\:\\:getColorDescription\\(\\)\\.$#"
+			count: 1
+			path: ../tests/ParserTest.php
 
