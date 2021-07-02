@@ -33,19 +33,78 @@ class OutputFormatTest extends TestCase
 EOT;
 
     /**
-     * @var Parser
-     */
-    private $oParser;
-
-    /**
      * @var Document
      */
     private $oDocument;
 
     protected function setUp()
     {
-        $this->oParser = new Parser(self::TEST_CSS);
-        $this->oDocument = $this->oParser->parse();
+        $parser = new Parser(self::TEST_CSS);
+        $this->oDocument = $parser->parse();
+    }
+
+    /**
+     * @test
+     */
+    public function createReturnsInstance()
+    {
+        $instance = OutputFormat::create();
+
+        self::assertInstanceOf(OutputFormat::class, $instance);
+    }
+
+    /**
+     * @test
+     */
+    public function createCalledTwoTimesReturnsSeparateInstanceWithEachCall()
+    {
+        self::assertNotSame(OutputFormat::create(), OutputFormat::create());
+    }
+
+    /**
+     * @test
+     */
+    public function createCompactReturnsInstance()
+    {
+        $instance = OutputFormat::createCompact();
+
+        self::assertInstanceOf(OutputFormat::class, $instance);
+    }
+
+    /**
+     * @test
+     */
+    public function createCompactCalledTwoTimesReturnsSeparateInstanceWithEachCall()
+    {
+        self::assertNotSame(OutputFormat::createCompact(), OutputFormat::createCompact());
+    }
+
+    /**
+     * @test
+     */
+    public function createCompactSetsSpaceForRulesToEmptyString()
+    {
+        $subject = OutputFormat::createCompact();
+
+        self::assertSame('', $subject->getSpaceAfterRules());
+    }
+
+    /**
+     * @test
+     */
+    public function createPrettyReturnsInstance()
+    {
+        $instance = OutputFormat::createPretty();
+
+        self::assertInstanceOf(OutputFormat::class, $instance);
+    }
+
+    /**
+     * @test
+     */
+    public function createPrettyCalledTwoTimesReturnsSeparateInstanceWithEachCall()
+    {
+        self::assertNotSame(OutputFormat::createPretty(), OutputFormat::createPretty());
     }
 
     /**
